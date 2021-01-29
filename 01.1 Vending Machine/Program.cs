@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace _01._1_Vending_Machine
 {
@@ -6,7 +7,7 @@ namespace _01._1_Vending_Machine
     {
         static void Main(string[] args)
         {
-            // Exercise 01
+            // Exercise 02
             // Author: Marques, Glauber
 
             Console.WriteLine("Welcome to the .NET C# Soda Vending Machine ");
@@ -14,6 +15,10 @@ namespace _01._1_Vending_Machine
             int valueInserted = int.Parse(Console.ReadLine());
             Console.WriteLine("You have inserted {0} cents", valueInserted);
             Console.WriteLine("Thanks. Here is your soda.");
+
+            Debug.WriteLine("This goes to the debug window");
+            Debug.WriteLine("To make this window visible use menu item");
+            Debug.WriteLine("Debug\\Windows\\Output");
         }
     }
 }
